@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles_sd/userdetails.css">
+</head>
+<body>
+    <div id="first_container">
+        <h2>Add Details</h2>
+
+        <div id="first_div">
+            <label for="Full Name">Full Name *</label><br>
+            <input type="text" id="name" class="input">
+            <br>
+            <label for="user email">Email *</label><br>
+            <input type="text" id="email" class="input">
+            <br>
+            <label for="number">Phone Number</label><br>
+            <input type="text" id="number" class="input">
+
+        </div>
+
+    </div>
+
+    <h2 id="review">Review Your Subscription</h2>
+    <div id="second_container">
+
+        <div id="right_div">
+            <h2>Digital Only Subscription: 1 Year</h2>
+
+            <ul>
+                <li>Stories from print magazine</li>
+                <li>Access to Outlook archives.</li>
+                <li>FREE Croma Coupon worth Rs. 500/-*!!</li>
+            </ul>
+
+            <p>Offer Includes</p>
+
+            <div id="first_right_div">
+                <img src="https://conscent-public.s3.ap-south-1.amazonaws.com/prod/Outlook%20India/offers/61827c1e3e48113adddfac72"
+                    alt="" id="croma">
+                <p>*Flat INR. 500/- off on online shopping on www.CROMA.com worth INR. 5000/- or more (Conditions apply.
+                    Not
+                    applicable on Smartphones). COUPON PARTNER - GrabOn</p>
+            </div>
+
+            <input type="checkbox">
+            <label for="checkbox" id="renews">Renews automatically after 1 year</label>
+
+            <p>Currency: <span style="font-weight: bold;">INR</span> &nbsp;&nbsp;</p>
+
+            <div style="display: flex;
+            gap: 10px;">
+                <h2 style="color: #b10f15;
+                "><i class="fa-solid fa-indian-rupee-sign"></i> &nbsp1499</h2>
+                <p style="position: relative;
+                top: 9px;">for 1 year</p>
+            </div>
+            
+        </div>
+
+        <div id="left_div">
+            <img src="https://conscent-public.s3.ap-south-1.amazonaws.com/prod/Outlook%20India/subscriptions/618279713e48113adddfab02"
+                alt="" id="left_div_img">
+
+            <div id="left_inner_div">
+                <a href="/" style="color: #b10f15;">Change Plan</a>
+                <button type="button" id="confirm" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal" style="background-color: #b10f15; border: none;
+                        padding: 8px 35px 8px 35px; border-radius: 6px;">
+                    confirm & Pay
+                </button>
+            </div>
+
+
+            <!-- Modal section   -->
+            <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="false">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header" style="background-color: #1a92b4;">
+                            <div style="display: flex; gap: 40px; ">
+                                <div style="width: 100px; height: 100px; background-color: white;">
+                                    <img src="https://conscent-static-assets.s3.ap-south-1.amazonaws.com/conscentLogo.png" alt=""
+                                        style="width:64px; height: 10px; margin-top: 40px; margin-left: 16px;">
+                                </div>
+                    
+                                <div style="line-height: 10px; margin-top: 10px;">
+                                    <p style="font-size: 20px; color: white;">ConsCent</p>
+                                    <p style="color: rgb(237, 237, 237);">Purchase Subscription</p>
+                                    <p style="color: white; font-size: 24px;"><i class="fa-solid fa-indian-rupee-sign"></i> &nbsp; 1499</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-body">
+                            <div style="
+                            height: 100%;
+                            width: 100%;
+                            cursor: pointer;
+                            background-color: #1b6073;
+                            ">
+                                <select style="background: transparent;
+                                color: white;
+                                padding: 4px 0px 4px 0px;">
+                                    <option value="">English</option>
+                                    <option value="">বাংলা</option>
+                                    <option value="">हिंदी</option>
+                                    <option value="">मराठी</option>
+                                    <option value="">ગુજરાતી</option>
+                                    <option value="">தமிழ்</option>
+                                    <option value="">తెలుగు</option>
+                                </select>
+                            </div>
+                    
+                            <div style="display: flex; background-color: #8fd1e5;
+                            margin-bottom: 12px;">
+                                <img src="https://cdn.razorpay.com/static/assets/trustedbadge/rtb-live.svg" alt="" style="width: 22px; height: 24px;
+                                margin-left: 14px;
+                                position: relative;
+                                top: 13px;
+                                left: 20px;">
+                                <p style="margin-left: 30px;">Razorpay Trusted Business</p>
+                            </div>
+                    
+                            <div style="border: 1px solid #e6e7e8;
+                            height: 40px; margin-bottom: 30px;
+                            text-align: center;">
+                                <input type="text" id="user_number">
+                                <input type="text" id="mail">
+                            </div>
+                    
+                            <p style="line-height: 1rem;
+                            text-transform: uppercase;
+                            color: rgba(51,51,51,0.6);
+                            margin: 28px 12px 17px;">UPI AND CARDS</p>
+                    
+                            <div>
+                                <div style="border: 1px solid #e6e7e8;
+                                margin-bottom: 30px;">
+                                    <h2>UPI</h2>
+                                    <p>Pay using Amazon Pay, PhonePe, PayTM or BHIM</p>
+                                </div>
+                    
+                                <div style="border: 1px solid #e6e7e8;">
+                                    <h2>Card</h2>
+                                    <p>MasterCard and Visa credit cards</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" id="pay" style="background-color: #b10f15; border: none;
+                            padding: 8px 35px 8px 35px; border-radius: 6px; color: white; font-size: 16px;
+                            ">Pay</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
+
+<!-- bootstrap Modal -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+    <script src="/scripts/userdetails.js"></script>

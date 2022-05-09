@@ -1,0 +1,94 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    background: #fff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#logo_section{
+
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    margin-top: 20px;
+    
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+}
+
+#form_sd {
+    margin: auto;
+    width: 38%;
+}
+
+#phone_sd {
+    width: 100%;
+    height: 60px;
+    margin: 20px 0 10px;
+    border: solid 1px #ccc;
+    padding-left: 2%;
+    border-radius: 2px;
+}
+
+#passoword_sd {
+    width: 100%;
+    height: 60px;
+    margin: 20px 0 10px;
+    border: solid 1px #ccc;
+    padding-left: 2%;
+    border-radius: 2px;
+}
+
+button {
+    background: #000;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 1px;
+    overflow: hidden;
+    border: 0;
+    cursor: pointer;
+    transition-timing-function: linear;
+    width: 100%;
+    padding: 18px 0px 18px 0px;
+    margin: 20px 0px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+button:hover{
+    background-color: red;
+    color: white;
+}
+
+p{
+    margin: auto;
+    width: 20%;
+    margin-top: -12px;
+    margin-bottom: 130px;
+}
+#sign{
+    color: red;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#login_subscribe > a{
+    color: black;
+}
+
+hr{
+    position: relative;
+    top: -67px;
+}
