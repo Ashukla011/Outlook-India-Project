@@ -1,10 +1,12 @@
-// import header from "../components/header.js";
-// import navbar from "../components/navbar.js";
-// import footer from "../components/footer.js";
+import navbar from "../comoponents/navbar.js";
+import header from "../comoponents/header.js";
+import footer from "../comoponents/footer.js";
+import bottom from "../comoponents/bottomdiv.js";
 
-// document.getElementById('navbar').innerHTML = navbar();
-// document.getElementById('logo_section').innerHTML = header();
-// document.getElementById('container').innerHTML = footer();
+document.getElementById('navbar').innerHTML = navbar();
+document.getElementById('logo_section').innerHTML = header();
+document.getElementById('container').innerHTML = footer();
+document.getElementById('bottom').innerHTML = bottom();
 
 let user_number = localStorage.getItem('number');
 
@@ -49,4 +51,4 @@ for (let i = 0; i < arr.length; i++) {
     }
 }
 
-// document.getElementById('date').append(cday + " " + month + " " + cdate + " " + cyear);
+document.getElementById('date').append(cdate+"th"+ " " + month + " " + " " + cyear);
