@@ -1,0 +1,103 @@
+#container_sd {
+    box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+    width: 20%;
+    margin: auto;
+    padding: 42px 45px;
+}
+
+#logo_sd {
+    height: 60px;
+    width: 264px;
+    padding: 15px 0px 15px 0px;
+}
+
+#email_div {
+    margin-bottom: 50px;
+}
+
+#email {
+    padding: 16px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #b10f15;
+    outline: none;
+    transition: .1s ease-out;
+    width: 84%;
+    color: black;
+    margin-top: 25%;
+}
+
+#Access_sd {
+    display: flex;
+    width: 33%;
+    margin: auto;
+    margin-top: -26px;
+}
+
+#Access_sd>p {
+    font-size: 8px;
+}
+
+#conscent_sd {
+    width: 45.36px;
+}
+
+#conscent1_sd {
+    width: 46px;
+    height: 7px;
+    position: relative;
+    top: 9px;
+}
+
+#verify {
+    width: 100%;
+    font-size: 15px;
+    margin-top: 10px;
+    background: transparent;
+    align-items: center;
+    border: none;
+    background-color: #707070;
+    padding: 15px 0px 15px 0px;
+    box-shadow: rgb(0 0 0 / 16%) 0px 1px 3px 0px;
+    color: #bbb;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+h3 {
+    text-align: center;
+    font-size: 16px;
+}
+
+#login_sd {
+    width: 100%;
+    background-color: #15213d;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 16px;
+    padding: 15px;
+    width: 100%;
+}
+
+#check_div {
+    margin-top: 0px;
+}
+
+.con_sd {
+    font-size: 11px;
+    margin: 0px 0px 11px;
+}
+
+#Access_sd1{
+    display: flex;
+    width: 50%;
+    margin: auto;
+    margin-top: 21px;
+    font-size: 8px;
+}

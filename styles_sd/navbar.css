@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+#logo_section{
+
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    margin-top: 20px;
+    
+}
+
+#login_subscribe{
+    font-size: 13px;
+    font-weight: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+
+#social_media{
+    
+    display: flex;
+    flex-direction: row;
+    /* margin-left: 50px; */
+}
+
+#social_media>div{
+    margin-right: 10px;
+}
+
+#date{
+    font-size: 14px;
+    font-weight: 400px;
+    line-height: 15.6px;
+    
+}
+
+
+#navbar{
+    margin: auto;
+    width: 73%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#navbar ul{
+    display: inline-flex;
+    list-style: none;
+}
+
+#navbar ul li{
+    width:90%;
+    margin: 10px;
+    font-size: 12px;
+    font-family: sans-serif; 
+}
+
+hr{
+    background-color:rgb(210, 5, 30);
+}
+
+/* #top-menu>li:hover{
+    color:rgb(210, 5, 30);
+    border-radius: 3px;
+    background:#e9e9e9; 
+} */
+
+.sub-menu1{
+    display: none;
+}
+#navbar ul li:hover{
+    color: red;
+}
+
+#navbar ul li:hover .sub-menu1{
+    margin-top: 13px;
+    margin-left: -2px;
+    width: fit-content;
+    display: block;
+    position: absolute;
+    background:rgb(233, 232, 232);
+    
+}
+ .sub-menu1 ul li:hover{
+    color: rgb(210, 5, 30);
+}
+

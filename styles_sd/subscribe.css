@@ -1,0 +1,156 @@
+body{
+    margin: 0;
+}
+
+#container{
+    border: 2px solid red;
+    width: 64%;
+    border-radius: 16px;
+    margin: auto;
+    background-color: #fffafb;
+}
+#logo {
+    margin-left: 44%;
+    width: 140px;
+    height: 26px;
+}
+
+#big_img {
+    width: 100%;
+    height: 300px;
+}
+
+#choose {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+#recommended {
+    font-size: 14px;
+    background-color: red;
+    width: 35%;
+    color: white;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    margin-left: 26%;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+}
+
+#first_div{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    /* border: 2px solid black; */
+    margin-top: 50px;
+    font-family: 'Roboto', sans-serif;
+    
+}
+#inside_div_img {
+    width: 167px;
+    height: 168px;
+    margin-left: 30px;
+}
+
+#top-left-div {
+    border-radius: 12px;
+    width: 255px;
+}
+
+#top-left-div>p {
+    color: #b10f15;
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 500;
+    margin: 0 0 12px;
+}
+
+#inner-div {
+    border: 1px solid #a3a3a3;
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 20px;
+    border-radius: 12px;
+}
+
+.first-para {
+    font-size: 14px;
+    color: #15213d;
+    margin-top: 33px;
+
+}
+
+.second-para {
+    font-size: 17px;
+    color: #15213d;
+    margin-right: 15px;
+    opacity: .6;
+    text-decoration: line-through;
+    margin-top: 33px;
+
+}
+
+#right-div{
+   margin-left: 24px;
+}
+
+#right-div > p {
+font-size: 13px;
+font-weight: bold;
+}
+
+#bottom-div-coupon {
+    margin-top: 6px;
+    display: flex;
+    justify-content: space-between;
+    width: 31%;
+}
+
+#buy {
+    width: 210px;
+    height: 38px;
+    border-radius: 68px;
+    background-color: #e0011b;
+    border: none;
+    padding: 10px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 24px;
+}
+
+#right-angle-icon {
+    padding: 9px 13px;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    border: 1.5px solid black;
+    border-radius: 4px;
+}
+
+#coupon {
+    height: 38px;
+    border-radius: 5px;
+    border: 1px solid #15213d;
+    background-color: #fff;
+    padding:0px 60px 0px 8px;
+    margin-left: 10px;
+}
+
+#right-bottom-div {
+    text-align: center;
+    width: 36%;
+    margin-left: 64%;
+    height: 110px;
+    margin-bottom: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
