@@ -1,3 +1,6 @@
+
+
+
 let getData = async (query) => {
   let todayDate = new Date().toISOString().split("T")[0];
 
@@ -1441,10 +1444,3 @@ let BUSINESSSPOTLIGHT = (data) => {
 
   }
 }
-
-
-
-
-
-
-
