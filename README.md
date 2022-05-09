@@ -48,7 +48,7 @@ This is the clone of Outlookindia website which we made in Unit-3 construct week
 ### **Contributors**
 
 - Km. Rinki
-- Avinash Kumar
+-Avnish Kumar
 - Sanketh TJ
 - Sumangal Dey
 - Protyush Banerjee
