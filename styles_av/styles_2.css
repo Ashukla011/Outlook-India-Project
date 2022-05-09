@@ -1,0 +1,200 @@
+.box > div:hover{
+    cursor: pointer;
+}
+
+/* .box > div > h3{
+    font-size: 25px;
+} */
+
+
+
+
+
+
+/* NATIONAL FEATURES */
+#container_2_Av_2{
+    width: 100%;
+    height:auto;
+    display: flex;
+    /* border:1px solid red; */
+
+}
+#container_2_Av_2>div{
+    width: 30%;
+    height: auto;
+    /* border: 1px solid red; */
+    margin:10px;
+    padding:5px
+}
+
+ 
+ /* BUSINESS & MONEY */
+
+#container_3_Av_3{
+    width: 100%;
+    height:auto;
+    display: flex;
+    /* border:1px solid red; */
+
+}
+#container_3_Av_3>div{
+    width: 30%;
+    height: auto;
+    /* border: 1px solid red; */
+    margin:10px;
+    padding:5px
+}
+
+/* CRYPTO CORNER */
+
+#container_4_Av_4{
+    width: 100%;
+    height:auto;
+    display: flex;
+    /* border:1px solid red; */
+
+}
+#container_4_Av_4>div{
+    width: 30%;
+    height: auto;
+    /* border: 1px solid red; */
+    margin:10px;
+    padding:5px
+}
+
+/* SPORTS */
+
+#container_5_Av_5{
+    width: 100%;
+    height:auto;
+    display: flex;
+    /* border:1px solid red; */
+
+}
+#container_5_Av_5>div{
+    width: 30%;
+    height: auto;
+    /* border: 1px solid red; */
+    margin:10px;
+    padding:5px
+}
+
+/* ENTERTAINMENT */
+
+#container_6_Av_6{
+    width: 100%;
+    height:auto;
+    display: flex;
+    /* border:1px solid red; */
+
+}
+#container_6_Av_6>div{
+    width: 30%;
+    height: auto;
+    /* border: 1px solid red; */
+    margin:10px;
+    padding:5px
+}
+
+
+/* CULTURE AND SOCIETY */
+#container_7_Av_7{
+    width: 100%;
+    height:auto;
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   justify-content: space-evenly;
+gap:10px;
+    /* border:1px solid red; */
+
+}
+
+
+
+/* //magzine */
+#container_8_Av_8{
+    width: 100%;
+    height:auto;
+    display: flex;
+    
+    border:1px solid red;
+
+}
+#container_8_Av_8>div{
+    width: 30%;
+    height: auto;
+    /* border: 1px solid red; */
+    margin:10px;
+    padding:5px
+}
+
+/* <!-- WORLD NEWS --> */
+#container_9_Av_9{
+    width: 100%;
+    height:auto;
+    display: flex;
+  
+
+}
+#container_9_Av_9>div{
+    width: 30%;
+    height: auto;
+    margin:10px;
+    padding:5px
+}
+#block_a_av_8_min_2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:8px
+}
+
+/* PHOTOS */
+#container_10_Av_10{
+    width: 100%;
+    height:auto;
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+    /* border:1px solid red; */  gap:10px;
+    padding:5px
+
+}
+/* #container_10_Av_10>div{
+    width: 100%;
+    height: auto;
+   
+} */
+
+/* spotlinght */
+#container_11_Av_11{
+    width: 100%;
+    height:auto;
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   
+    gap:10px;
+    padding:5px
+
+}
+
+/* 
+#container_11_Av_11>div{
+    width: 100%;
+    height: auto;
+  
+}  */
+
+
+/* BUSINESS SPOTLIGHT */
+#container_12_Av_12{
+    width: 100%;
+    height:auto;
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+  
+    gap:10px;
+    padding:5px
+
+}
+
+
+
