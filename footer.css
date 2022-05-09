@@ -1,0 +1,64 @@
+
+#container{
+    width:100%;
+    height:360px;
+    background-color:#212020;
+    display: flex;
+    justify-content: space-around; 
+}
+
+.headings h3{
+    color: white;
+}
+
+.rowlinks ul li{
+    list-style: none;
+    text-align: left;
+    line-height: 25px;
+    font-size: 13px;
+}
+
+a{
+    text-decoration: none;
+    color:#B1AEAE;
+}
+
+.rowlinks .fa-brands{
+    margin-left: 20px;
+    align-items: center;
+}
+
+.rowlink ul li:hover{
+    color: red;
+}
+
+#bottom{
+    background-color: black;
+    width: 100%;
+    height: 40px;
+    margin-top: 0;
+    display: flex;
+}
+
+
+#bottom div p{
+    color:#B1AEAE;
+}
+
+#bottom div ul li{
+    display: inline-block;
+    padding-right: 10px;
+
+}
+
+#copyrightlogo{
+    margin-left: 300px;
+}
+
+hr{
+    border-color: red;
+}
+
+.columnlink ul li:hover{
+    color: red;
+}
