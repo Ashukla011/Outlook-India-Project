@@ -1,7 +1,7 @@
 let header = ()=>{
     return`
     <div id="date">
-    
+    <h3 id="dt">9 Aug 2022</h3>
     </div>
                 
         <div  id="outlookLogo">

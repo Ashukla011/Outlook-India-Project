@@ -5,7 +5,7 @@ let search_navbar= async(query)=>{
 
     console.log(todayDate);
 
-    let res = await fetch(`https://newsapi.org/v2/everything?q=${query}&from=${todayDate}&sortBy=publishedAt&language=en&apiKey=06534a7328b048a0a25f6eea9a9844c6`);
+    let res = await fetch(`https://newsapi.org/v2/everything?q=${query}&from=${todayDate}&sortBy=publishedAt&language=en&apiKey=aca8e599ce734ecf88f6d175fb6e04a8`);
     
     let data = await res.json();
     

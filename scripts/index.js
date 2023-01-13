@@ -1,225 +1,24 @@
-
-
-
 let getData = async (query) => {
   let todayDate = new Date().toISOString().split("T")[0];
 
-  let res = await fetch(`https://newsapi.org/v2/everything?q=${query}&from=${todayDate}&sortBy=publishedAt&language=en&apiKey=aca8e599ce734ecf88f6d175fb6e04a8`);
+  //https://newsdata.io/api/1/news?apikey=pub_15613809a2723f4f851780b3997b38b0825e6&q=football&to_date=13-01-2023&language=en
+
+  //let res = await fetch(`https://newsdata.io/api/1/news?apikey=pub_15613809a2723f4f851780b3997b38b0825e6&q=${query}&to_date=${todayDate}&language=en`);
+
+  let res = await fetch(`https://newsdata.io/api/1/news?apikey=pub_15613809a2723f4f851780b3997b38b0825e6&q=${query}&to_date=${todayDate}&language=en`);
 
   let data = await res.json();
 
-  append_1(data.articles)
-  append_minidiv_2(data.articles)
+  console.log(data);
 
-  append_2(data.articles)
-  append_3(data.articles)
+  append_1(data.results)
+  append_minidiv_2(data.results)
+
+  append_2(data.results)
+  append_3(data.results)
 }
 
 getData("general");
-
-
-
-
-
- let getData2 = async (query) => {
-  let todayDate = new Date().toISOString().split("T")[0];
-
-  let res = await fetch(`https://newsapi.org/v2/everything?q=${query}&from=${todayDate}&sortBy=publishedAt&language=en&apiKey=aca8e599ce734ecf88f6d175fb6e04a8`);
-
-  let data = await res.json();
-
-  append_national_1(data.articles)
-  append_national_2(data.articles)
-  append_national_3(data.articles)
-}
-
-getData2("national features");
-
-
-
-
-
-
-let getData3 = async (query) => {
-  let todayDate = new Date().toISOString().split("T")[0];
-
-  let res = await fetch(`https://newsapi.org/v2/everything?q=${query}&from=${todayDate}&sortBy=publishedAt&language=en&apiKey=aca8e599ce734ecf88f6d175fb6e04a8`);
-
-  let data = await res.json();
-
-  BUSINESS_MONEY_1(data.articles)
-  BUSINESS_MONEY_2(data.articles)
-  BUSINESS_MONEY_3(data.articles)
-}
-
-getData3("business and money");
-
-
-
-
-
-
-let getData4 = async (query) => {
-  let todayDate = new Date().toISOString().split("T")[0];
-
-  let res = await fetch(`https://newsapi.org/v2/everything?q=${query}&from=${todayDate}&sortBy=publishedAt&language=en&apiKey=aca8e599ce734ecf88f6d175fb6e04a8`);
-
-  let data = await res.json();
-
-  CRYPTO_CORNER_1(data.articles)
-  CRYPTO_CORNER_2(data.articles)
-  CRYPTO_CORNER_3(data.articles)
-  CRYPTO_CORNER_4(data.articles)
-}
-
-getData4("crypto money");
-
-
-
-
-
-
-let getData5 = async (query) => {
-  let todayDate = new Date().toISOString().split("T")[0];
-
-  let res = await fetch(`https://newsapi.org/v2/everything?q=${query}&from=${todayDate}&sortBy=publishedAt&language=en&apiKey=aca8e599ce734ecf88f6d175fb6e04a8`);
-
-  let data = await res.json();
-
-  SPORTS_1(data.articles)
-  SPORTS_2(data.articles)
-  SPORTS_3(data.articles)
-  SPORTS_4(data.articles)
-}
-
-getData5("sports");
-
-
-
-
-
-
-let getData6 = async (query) => {
-  let todayDate = new Date().toISOString().split("T")[0];
-
-  let res = await fetch(`https://newsapi.org/v2/everything?q=${query}&from=${todayDate}&sortBy=publishedAt&language=en&apiKey=aca8e599ce734ecf88f6d175fb6e04a8`);
-
-  let data = await res.json();
-
-  ENTERTAINMENT_1(data.articles)
-  ENTERTAINMENT_2(data.articles)
-  ENTERTAINMENT_3(data.articles)
-}
-
-getData6("entertainment");
-
-
-
-
-
-
-let getData7 = async (query) => {
-  let todayDate = new Date().toISOString().split("T")[0];
-
-  let res = await fetch(`https://newsapi.org/v2/everything?q=${query}&from=${todayDate}&sortBy=publishedAt&language=en&apiKey=aca8e599ce734ecf88f6d175fb6e04a8`);
-
-  let data = await res.json();
-
-  CULTUREANDSOCIETY(data.articles)
-}
-
-getData7("culture and society");
-
-
-
-
-
-
-let getData8 = async (query) => {
-  let todayDate = new Date().toISOString().split("T")[0];
-
-  let res = await fetch(`https://newsapi.org/v2/everything?q=${query}&from=${todayDate}&sortBy=publishedAt&language=en&apiKey=aca8e599ce734ecf88f6d175fb6e04a8`);
-
-  let data = await res.json();
-
-  MAGAZINE__1(data.articles)
-  MAGAZINE__2_min_2(data.articles)
-  MAGAZINE__2(data.articles)
-  MAGAZINE__3(data.articles)
-}
-
-getData8("magazine");
-
-
-
-
-
-
-let getData9 = async (query) => {
-  let todayDate = new Date().toISOString().split("T")[0];
-
-  let res = await fetch(`https://newsapi.org/v2/everything?q=${query}&from=${todayDate}&sortBy=publishedAt&language=en&apiKey=aca8e599ce734ecf88f6d175fb6e04a8`);
-
-  let data = await res.json();
-
-  WORLD_NEWS_1(data.articles)
-  WORLD_NEWS_2(data.articles)
-  WORLD_NEWS_3(data.articles)
-  WORLD_NEWS_4(data.articles)
-}
-
-getData9("world news");
-
-
-
-
-
-
-let getData10 = async (query) => {
-  let todayDate = new Date().toISOString().split("T")[0];
-
-  let res = await fetch(`https://newsapi.org/v2/everything?q=${query}&from=${todayDate}&sortBy=publishedAt&language=en&apiKey=aca8e599ce734ecf88f6d175fb6e04a8`);
-
-  let data = await res.json();
-
-  photos(data.articles)
-}
-
-getData10("most important news");
-
-
-
-
-
-
-let getData11 = async (query) => {
-  let todayDate = new Date().toISOString().split("T")[0];
-
-  let res = await fetch(`https://newsapi.org/v2/everything?q=${query}&from=${todayDate}&sortBy=publishedAt&language=en&apiKey=aca8e599ce734ecf88f6d175fb6e04a8`);
-
-  let data = await res.json();
-
-  SPOTLIGHT_1(data.articles)
-}
-
-getData11("news in spotlight");
-
-
-
-
-
-
-let getData12 = async (query) => {
-  let todayDate = new Date().toISOString().split("T")[0];
-
-  let res = await fetch(`https://newsapi.org/v2/everything?q=${query}&from=${todayDate}&sortBy=publishedAt&language=en&apiKey=aca8e599ce734ecf88f6d175fb6e04a8`);
-
-  let data = await res.json();
-
-  BUSINESSSPOTLIGHT(data.articles)
-}
-
-getData12("top business news"); 
 
 
 
@@ -231,19 +30,19 @@ let append_1 = (data) => {
     let div = document.createElement("div")
 
 
-    let urlToImage = document.createElement("img")
+    /* let urlToImage = document.createElement("img")
     if (i === 0) {
 
-      urlToImage.src = data[i].urlToImage;
+      urlToImage.src = data[i].image_url;
       urlToImage.setAttribute("id","p1");
-    }
+    } */
 
     let publishedAt = document.createElement("p")
-    publishedAt.innerText = data[i].publishedAt
+    publishedAt.innerText = data[i].pubDate;
 
 
     let author = document.createElement("p")
-    author.innerText = data[i].author
+    author.innerText = data[i].creator
     author.style.color = "red"
 
 
@@ -258,7 +57,7 @@ let append_1 = (data) => {
     let hr = document.createElement("hr")
 
 
-    div.append(urlToImage, author, title, description, publishedAt, hr);
+    div.append(author, title, description, publishedAt, hr);
     div.addEventListener("click", function (){
       localStorage.setItem("news", JSON.stringify(data[i]));
       window.location.href="detailedNews.html";
@@ -276,7 +75,7 @@ let append_minidiv_2 = (data) => {
 
 
     let author = document.createElement("p")
-    author.innerText = data[i].author
+    author.innerText = data[i].creator
 
     author.style.color = "red"
 
@@ -287,7 +86,7 @@ let append_minidiv_2 = (data) => {
     description.innerText = data[i].description
 
     let publishedAt = document.createElement("p")
-    publishedAt.innerText = data[i].publishedAt
+    publishedAt.innerText = data[i].pubDate;
 
     let hr = document.createElement("hr")
 
@@ -309,7 +108,7 @@ let append_2 = (data) => {
 
 
     let author = document.createElement("p")
-    author.innerText = data[i].author
+    author.innerText = data[i].creator
 
     author.style.color = "red"
 
@@ -320,7 +119,7 @@ let append_2 = (data) => {
     description.innerHTML = data[i].description
 
     let publishedAt = document.createElement("p")
-    publishedAt.innerText = data[i].publishedAt
+    publishedAt.innerText = data[i].pubDate;
 
     let hr = document.createElement("hr")
 
@@ -343,15 +142,15 @@ let append_3 = (data) => {
     //  div.style.border="1px solid green"
     div.style.width = "fit-content"
 
-    let urlToImage = document.createElement("img")
-    urlToImage.src = data[i].urlToImage;
+/*     let urlToImage = document.createElement("img")
+    urlToImage.src = data[i].image_url;
     urlToImage.style.height = "150px";
-    urlToImage.style.width = "fit-content";
+    urlToImage.style.width = "fit-content"; */
 
 
 
     let author = document.createElement("p")
-    author.innerText = data[i].author
+    author.innerText = data[i].creator
 
     /* author.style.width = "60%" */
     author.style.color = "red"
@@ -364,12 +163,12 @@ let append_3 = (data) => {
     /* description.style.width = "60%" */
 
     let publishedAt = document.createElement("p")
-    publishedAt.innerText = data[i].publishedAt
+    publishedAt.innerText = data[i].pubDate;
     /* publishedAt.style.width = "60%" */
     let hr = document.createElement("hr")
 
 
-    div.append(urlToImage, author, title, description, publishedAt, hr)
+    div.append(uauthor, title, description, publishedAt, hr)
     div.addEventListener("click", function (){
       localStorage.setItem("news", JSON.stringify(data[i]));
       window.location.href="detailedNews.html";
@@ -381,6 +180,209 @@ let append_3 = (data) => {
 }
 
 
+
+let getData2 = async (query) => {
+  let todayDate = new Date().toISOString().split("T")[0];
+
+  let res = await fetch(`https://newsdata.io/api/1/news?apikey=pub_15613809a2723f4f851780b3997b38b0825e6&q=${query}&to_date=${todayDate}&language=en`);
+
+  let data = await res.json();
+
+  append_national_1(data.results)
+  append_national_2(data.results)
+  append_national_3(data.results)
+}
+
+getData2("national");
+
+
+
+
+
+
+let getData3 = async (query) => {
+  let todayDate = new Date().toISOString().split("T")[0];
+
+  let res = await fetch(`https://newsdata.io/api/1/news?apikey=pub_15613809a2723f4f851780b3997b38b0825e6&q=${query}&to_date=${todayDate}&language=en`);
+
+  let data = await res.json();
+
+  BUSINESS_MONEY_1(data.results)
+  BUSINESS_MONEY_2(data.results)
+  BUSINESS_MONEY_3(data.results)
+}
+
+getData3("business");
+
+
+
+
+
+
+let getData4 = async (query) => {
+  let todayDate = new Date().toISOString().split("T")[0];
+
+  let res = await fetch(`https://newsdata.io/api/1/news?apikey=pub_15613809a2723f4f851780b3997b38b0825e6&q=${query}&to_date=${todayDate}&language=en`);
+
+  let data = await res.json();
+
+  CRYPTO_CORNER_1(data.results)
+  CRYPTO_CORNER_2(data.results)
+  CRYPTO_CORNER_3(data.results)
+  CRYPTO_CORNER_4(data.results)
+}
+
+getData4("crypto currency");
+
+
+
+
+
+
+let getData5 = async (query) => {
+  let todayDate = new Date().toISOString().split("T")[0];
+
+  let res = await fetch(`https://newsdata.io/api/1/news?apikey=pub_15613809a2723f4f851780b3997b38b0825e6&q=${query}&to_date=${todayDate}&language=en`);
+
+  let data = await res.json();
+
+  SPORTS_1(data.results)
+  SPORTS_2(data.results)
+  SPORTS_3(data.results)
+  SPORTS_4(data.results)
+}
+
+getData5("sports");
+
+
+
+
+
+
+let getData6 = async (query) => {
+  let todayDate = new Date().toISOString().split("T")[0];
+
+  let res = await fetch(`https://newsdata.io/api/1/news?apikey=pub_15613809a2723f4f851780b3997b38b0825e6&q=${query}&to_date=${todayDate}&language=en`);
+
+  let data = await res.json();
+
+  ENTERTAINMENT_1(data.results)
+  ENTERTAINMENT_2(data.results)
+  ENTERTAINMENT_3(data.results)
+}
+
+getData6("entertainment");
+
+
+
+
+
+
+let getData7 = async (query) => {
+  let todayDate = new Date().toISOString().split("T")[0];
+
+  let res = await fetch(`https://newsdata.io/api/1/news?apikey=pub_15613809a2723f4f851780b3997b38b0825e6&q=${query}&to_date=${todayDate}&language=en`);
+
+  let data = await res.json();
+
+  CULTUREANDSOCIETY(data.results)
+}
+
+getData7("culture");
+
+
+
+
+
+
+let getData8 = async (query) => {
+  let todayDate = new Date().toISOString().split("T")[0];
+
+  let res = await fetch(`https://newsdata.io/api/1/news?apikey=pub_15613809a2723f4f851780b3997b38b0825e6&q=${query}&to_date=${todayDate}&language=en`);
+
+  let data = await res.json();
+
+  MAGAZINE__1(data.results)
+  MAGAZINE__2_min_2(data.results)
+  MAGAZINE__2(data.results)
+  MAGAZINE__3(data.results)
+}
+
+getData8("magazine");
+
+
+
+
+
+
+let getData9 = async (query) => {
+  let todayDate = new Date().toISOString().split("T")[0];
+
+  let res = await fetch(`https://newsdata.io/api/1/news?apikey=pub_15613809a2723f4f851780b3997b38b0825e6&q=${query}&to_date=${todayDate}&language=en`);
+
+  let data = await res.json();
+
+  WORLD_NEWS_1(data.results)
+  WORLD_NEWS_2(data.results)
+  WORLD_NEWS_3(data.results)
+  WORLD_NEWS_4(data.results)
+}
+
+getData9("world news");
+
+
+
+
+
+
+let getData10 = async (query) => {
+  let todayDate = new Date().toISOString().split("T")[0];
+
+  let res = await fetch(`https://newsdata.io/api/1/news?apikey=pub_15613809a2723f4f851780b3997b38b0825e6&q=${query}&to_date=${todayDate}&language=en`);
+
+  let data = await res.json();
+
+  photos(data.results)
+}
+
+getData10("most important news");
+
+
+
+
+
+
+let getData11 = async (query) => {
+  let todayDate = new Date().toISOString().split("T")[0];
+
+  let res = await fetch(`https://newsdata.io/api/1/news?apikey=pub_15613809a2723f4f851780b3997b38b0825e6&q=${query}&to_date=${todayDate}&language=en`);
+
+  let data = await res.json();
+
+  SPOTLIGHT_1(data.results)
+}
+
+getData11("spotlight");
+
+
+
+
+
+
+let getData12 = async (query) => {
+  let todayDate = new Date().toISOString().split("T")[0];
+
+  let res = await fetch(`https://newsdata.io/api/1/news?apikey=pub_15613809a2723f4f851780b3997b38b0825e6&q=${query}&to_date=${todayDate}&language=en`);
+
+  let data = await res.json();
+
+  BUSINESSSPOTLIGHT(data.results)
+}
+
+getData12("business"); 
+
+
+
 ///NATIONAL FEATURES
 
 let append_national_1 = (data) => {
@@ -389,18 +391,18 @@ let append_national_1 = (data) => {
     let div = document.createElement("div")
 
 
-    let urlToImage = document.createElement("img")
+    /* let urlToImage = document.createElement("img")
     if (i === 0) {
 
-      urlToImage.src = data[i].urlToImage;
-    }
+      urlToImage.src = data[i].Image_url;
+    } */
 
     let publishedAt = document.createElement("p")
-    publishedAt.innerText = data[i].publishedAt
+    publishedAt.innerText = data[i].pubDate
 
 
     let author = document.createElement("p")
-    author.innerText = data[i].author
+    author.innerText = data[i].creator
     author.style.color = "red"
 
 
@@ -412,7 +414,7 @@ let append_national_1 = (data) => {
 
 
 
-    div.append(urlToImage, author, title, description, publishedAt)
+    div.append(author, title, description, publishedAt)
     div.addEventListener("click", function (){
       localStorage.setItem("news", JSON.stringify(data[i]));
       window.location.href="detailedNews.html";
@@ -433,15 +435,15 @@ let append_national_2 = (data) => {
     //    if(i===0)
     //    {
 
-    //     urlToImage.src=data[i].urlToImage;
+    //     urlToImage.src=data[i].Image_url;
     //    }
 
     let publishedAt = document.createElement("p")
-    publishedAt.innerText = data[i].publishedAt
+    publishedAt.innerText = data[i].pubDate
 
 
     let author = document.createElement("p")
-    author.innerText = data[i].author
+    author.innerText = data[i].creator
     author.style.color = "red"
 
 
@@ -470,18 +472,18 @@ let append_national_3 = (data) => {
     let div = document.createElement("div")
 
 
-    let urlToImage = document.createElement("img")
+    /* let urlToImage = document.createElement("img")
     if (i === 0) {
 
-      urlToImage.src = data[i].urlToImage;
-    }
+      urlToImage.src = data[i].Image_url;
+    } */
 
     let publishedAt = document.createElement("p")
-    publishedAt.innerText = data[i].publishedAt
+    publishedAt.innerText = data[i].pubDate
 
 
     let author = document.createElement("p")
-    author.innerText = data[i].author
+    author.innerText = data[i].creator
     author.style.color = "red"
 
 
@@ -493,7 +495,7 @@ let append_national_3 = (data) => {
 
     let hr = document.createElement("hr")
 
-    div.append(urlToImage, author, title, description, publishedAt, hr)
+    div.append(author, title, description, publishedAt, hr)
     div.addEventListener("click", function (){
       localStorage.setItem("news", JSON.stringify(data[i]));
       window.location.href="detailedNews.html";
@@ -511,18 +513,18 @@ let BUSINESS_MONEY_1 = (data) => {
     let div = document.createElement("div")
 
 
-    let urlToImage = document.createElement("img")
+    /* let urlToImage = document.createElement("img")
     if (i === 0) {
 
-      urlToImage.src = data[i].urlToImage;
-    }
+      urlToImage.src = data[i].Image_url;
+    } */
 
     let publishedAt = document.createElement("p")
-    publishedAt.innerText = data[i].publishedAt
+    publishedAt.innerText = data[i].pubDate
 
 
     let author = document.createElement("p")
-    author.innerText = data[i].author
+    author.innerText = data[i].creator
     author.style.color = "red"
 
 
@@ -534,7 +536,7 @@ let BUSINESS_MONEY_1 = (data) => {
 
 
 
-    div.append(urlToImage, author, title, description, publishedAt)
+    div.append(author, title, description, publishedAt)
     div.addEventListener("click", function (){
       localStorage.setItem("news", JSON.stringify(data[i]));
       window.location.href="detailedNews.html";
@@ -549,11 +551,11 @@ let BUSINESS_MONEY_2 = (data) => {
     let div = document.createElement("div")
 
     let publishedAt = document.createElement("p")
-    publishedAt.innerText = data[i].publishedAt
+    publishedAt.innerText = data[i].pubDate
 
 
     let author = document.createElement("p")
-    author.innerText = data[i].author
+    author.innerText = data[i].creator
     author.style.color = "red"
 
 
@@ -582,11 +584,11 @@ let BUSINESS_MONEY_3 = (data) => {
 
 
     let publishedAt = document.createElement("p")
-    publishedAt.innerText = data[i].publishedAt
+    publishedAt.innerText = data[i].pubDate
 
 
     let author = document.createElement("p")
-    author.innerText = data[i].author
+    author.innerText = data[i].creator
     author.style.color = "red"
 
 
@@ -617,18 +619,18 @@ let CRYPTO_CORNER_1 = (data) => {
     let div = document.createElement("div")
 
 
-    let urlToImage = document.createElement("img")
+    /* let urlToImage = document.createElement("img")
     if (i === 0) {
 
-      urlToImage.src = data[i].urlToImage;
-    }
+      urlToImage.src = data[i].Image_url;
+    } */
 
     let publishedAt = document.createElement("p")
-    publishedAt.innerText = data[i].publishedAt
+    publishedAt.innerText = data[i].pubDate
 
 
     let author = document.createElement("p")
-    author.innerText = data[i].author
+    author.innerText = data[i].creator
     author.style.color = "red"
 
 
@@ -640,7 +642,7 @@ let CRYPTO_CORNER_1 = (data) => {
 
 
 
-    div.append(urlToImage, author, title, description, publishedAt)
+    div.append(author, title, description, publishedAt)
     div.addEventListener("click", function (){
       localStorage.setItem("news", JSON.stringify(data[i]));
       window.location.href="detailedNews.html";
@@ -657,11 +659,11 @@ let CRYPTO_CORNER_2 = (data) => {
 
 
     let publishedAt = document.createElement("p")
-    publishedAt.innerText = data[i].publishedAt
+    publishedAt.innerText = data[i].pubDate
 
 
     let author = document.createElement("p")
-    author.innerText = data[i].author
+    author.innerText = data[i].creator
     author.style.color = "red"
 
 
@@ -690,11 +692,11 @@ let CRYPTO_CORNER_3 = (data) => {
 
 
     let publishedAt = document.createElement("p")
-    publishedAt.innerText = data[i].publishedAt
+    publishedAt.innerText = data[i].pubDate
 
 
     let author = document.createElement("p")
-    author.innerText = data[i].author
+    author.innerText = data[i].creator
     author.style.color = "red"
 
 
@@ -722,11 +724,11 @@ let CRYPTO_CORNER_4 = (data) => {
 
 
     let publishedAt = document.createElement("p")
-    publishedAt.innerText = data[i].publishedAt
+    publishedAt.innerText = data[i].pubDate
 
 
     let author = document.createElement("p")
-    author.innerText = data[i].author
+    author.innerText = data[i].creator
     author.style.color = "red"
 
 
@@ -756,18 +758,18 @@ let SPORTS_1 = (data) => {
     let div = document.createElement("div")
 
 
-    let urlToImage = document.createElement("img")
+   /*  let urlToImage = document.createElement("img")
     if (i === 0) {
 
-      urlToImage.src = data[i].urlToImage;
-    }
+      urlToImage.src = data[i].Image_url;
+    } */
 
     let publishedAt = document.createElement("p")
-    publishedAt.innerText = data[i].publishedAt
+    publishedAt.innerText = data[i].pubDate
 
 
     let author = document.createElement("p")
-    author.innerText = data[i].author
+    author.innerText = data[i].creator
     author.style.color = "red"
 
 
@@ -779,7 +781,7 @@ let SPORTS_1 = (data) => {
 
 
 
-    div.append(urlToImage, author, title, description, publishedAt)
+    div.append( author, title, description, publishedAt)
     div.addEventListener("click", function (){
       localStorage.setItem("news", JSON.stringify(data[i]));
       window.location.href="detailedNews.html";
@@ -798,15 +800,15 @@ let SPORTS_2 = (data) => {
     //    if(i===0)
     //    {
 
-    //     urlToImage.src=data[i].urlToImage;
+    //     urlToImage.src=data[i].Image_url;
     //    }
 
     let publishedAt = document.createElement("p")
-    publishedAt.innerText = data[i].publishedAt
+    publishedAt.innerText = data[i].pubDate
 
 
     let author = document.createElement("p")
-    author.innerText = data[i].author
+    author.innerText = data[i].creator
     author.style.color = "red"
 
 
@@ -833,11 +835,11 @@ let SPORTS_3 = (data) => {
     let div = document.createElement("div")
 
     let publishedAt = document.createElement("p")
-    publishedAt.innerText = data[i].publishedAt
+    publishedAt.innerText = data[i].pubDate
 
 
     let author = document.createElement("p")
-    author.innerText = data[i].author
+    author.innerText = data[i].creator
     author.style.color = "red"
 
 
@@ -866,11 +868,11 @@ let SPORTS_4 = (data) => {
 
 
     let publishedAt = document.createElement("p")
-    publishedAt.innerText = data[i].publishedAt
+    publishedAt.innerText = data[i].pubDate
 
 
     let author = document.createElement("p")
-    author.innerText = data[i].author
+    author.innerText = data[i].creator
     author.style.color = "red"
 
 
@@ -899,18 +901,18 @@ let ENTERTAINMENT_1 = (data) => {
     let div = document.createElement("div")
 
 
-    let urlToImage = document.createElement("img")
+    /* let urlToImage = document.createElement("img")
     if (i === 0) {
 
-      urlToImage.src = data[i].urlToImage;
-    }
+      urlToImage.src = data[i].Image_url;
+    } */
 
     let publishedAt = document.createElement("p")
-    publishedAt.innerText = data[i].publishedAt
+    publishedAt.innerText = data[i].pubDate
 
 
     let author = document.createElement("p")
-    author.innerText = data[i].author
+    author.innerText = data[i].creator
     author.style.color = "red"
 
 
@@ -922,7 +924,7 @@ let ENTERTAINMENT_1 = (data) => {
 
 
 
-    div.append(urlToImage, author, title, description, publishedAt)
+    div.append(author, title, description, publishedAt)
     div.addEventListener("click", function (){
       localStorage.setItem("news", JSON.stringify(data[i]));
       window.location.href="detailedNews.html";
@@ -941,15 +943,15 @@ let ENTERTAINMENT_2 = (data) => {
     //    if(i===0)
     //    {
 
-    //     urlToImage.src=data[i].urlToImage;
+    //     urlToImage.src=data[i].Image_url;
     //    }
 
     let publishedAt = document.createElement("p")
-    publishedAt.innerText = data[i].publishedAt
+    publishedAt.innerText = data[i].pubDate
 
 
     let author = document.createElement("p")
-    author.innerText = data[i].author
+    author.innerText = data[i].creator
     author.style.color = "red"
 
 
@@ -976,11 +978,11 @@ let ENTERTAINMENT_3 = (data) => {
     let div = document.createElement("div")
 
     let publishedAt = document.createElement("p")
-    publishedAt.innerText = data[i].publishedAt
+    publishedAt.innerText = data[i].pubDate
 
 
     let author = document.createElement("p")
-    author.innerText = data[i].author
+    author.innerText = data[i].creator
     author.style.color = "red"
 
 
@@ -1008,13 +1010,13 @@ let CULTUREANDSOCIETY = (data) => {
 
     let div = document.createElement("div")
 
-    let urlToImage = document.createElement("img")
-    urlToImage.src = data[i].urlToImage;
+/*     let urlToImage = document.createElement("img")
+    urlToImage.src = data[i].Image_url;
     urlToImage.style.height="250px";
-    urlToImage.style.width="fit-content";
+    urlToImage.style.width="fit-content"; */
 
     let author = document.createElement("p")
-    author.innerText = data[i].author
+    author.innerText = data[i].creator
 
     author.style.color = "red"
     let title = document.createElement("h3")
@@ -1024,10 +1026,10 @@ let CULTUREANDSOCIETY = (data) => {
     description.innerHTML = data[i].description
 
     let publishedAt = document.createElement("p")
-    publishedAt.innerText = data[i].publishedAt
+    publishedAt.innerText = data[i].pubDate
 
 
-    div.append(urlToImage, author, title, description, publishedAt)
+    div.append(author, title, description, publishedAt)
     div.addEventListener("click", function (){
       localStorage.setItem("news", JSON.stringify(data[i]));
       window.location.href="detailedNews.html";
@@ -1047,18 +1049,18 @@ let MAGAZINE__1 = (data) => {
     let div = document.createElement("div")
 
 
-    let urlToImage = document.createElement("img")
+ /*    let urlToImage = document.createElement("img")
     if (i === 0) {
 
-      urlToImage.src = data[i].urlToImage;
-    }
+      urlToImage.src = data[i].Image_url;
+    } */
 
     let publishedAt = document.createElement("p")
-    publishedAt.innerText = data[i].publishedAt
+    publishedAt.innerText = data[i].pubDate
 
 
     let author = document.createElement("p")
-    author.innerText = data[i].author
+    author.innerText = data[i].creator
     author.style.color = "red"
 
 
@@ -1070,7 +1072,7 @@ let MAGAZINE__1 = (data) => {
 
     let hr = document.createElement("hr")
 
-    div.append(urlToImage, author, title, description, publishedAt, hr)
+    div.append(author, title, description, publishedAt, hr)
     div.addEventListener("click", function (){
       localStorage.setItem("news", JSON.stringify(data[i]));
       window.location.href="detailedNews.html";
@@ -1088,7 +1090,7 @@ let MAGAZINE__2_min_2 = (data) => {
 
 
     let author = document.createElement("p")
-    author.innerText = data[i].author
+    author.innerText = data[i].creator
 
     author.style.color = "red"
 
@@ -1099,7 +1101,7 @@ let MAGAZINE__2_min_2 = (data) => {
     description.innerHTML = data[i].description
 
     let publishedAt = document.createElement("p")
-    publishedAt.innerText = data[i].publishedAt
+    publishedAt.innerText = data[i].pubDate
 
     let hr = document.createElement("hr")
 
@@ -1124,7 +1126,7 @@ let MAGAZINE__2 = (data) => {
 
 
     let author = document.createElement("p")
-    author.innerText = data[i].author
+    author.innerText = data[i].creator
 
     author.style.color = "red"
 
@@ -1135,7 +1137,7 @@ let MAGAZINE__2 = (data) => {
     description.innerHTML = data[i].description
 
     let publishedAt = document.createElement("p")
-    publishedAt.innerText = data[i].publishedAt
+    publishedAt.innerText = data[i].pubDate
 
     let hr = document.createElement("hr")
 
@@ -1158,14 +1160,14 @@ let MAGAZINE__3 = (data) => {
 
     let div = document.createElement("div")
 
-    let urlToImage = document.createElement("img")
-    urlToImage.src = data[i].urlToImage;
+ /*    let urlToImage = document.createElement("img")
+    urlToImage.src = data[i].Image_url;
     urlToImage.style.height="150px";
-    urlToImage.style.width="fit-content";
+    urlToImage.style.width="fit-content"; */
     
 
     let author = document.createElement("p")
-    author.innerText = data[i].author
+    author.innerText = data[i].creator
 
     author.style.color = "red"
     let title = document.createElement("h3")
@@ -1175,11 +1177,11 @@ let MAGAZINE__3 = (data) => {
     description.innerHTML = data[i].description
 
     let publishedAt = document.createElement("p")
-    publishedAt.innerText = data[i].publishedAt
+    publishedAt.innerText = data[i].pubDate
 
     let hr = document.createElement("hr")
 
-    div.append(urlToImage, author, title, description, publishedAt, hr)
+    div.append(author, title, description, publishedAt, hr)
     div.addEventListener("click", function (){
       localStorage.setItem("news", JSON.stringify(data[i]));
       window.location.href="detailedNews.html";
@@ -1198,11 +1200,11 @@ let WORLD_NEWS_1 = (data) => {
 
     let div = document.createElement("div")
 
-    let urlToImage = document.createElement("img")
-    urlToImage.src = data[i].urlToImage;
+/*     let urlToImage = document.createElement("img")
+    urlToImage.src = data[i].Image_url; */
 
     let author = document.createElement("p")
-    author.innerText = data[i].author
+    author.innerText = data[i].creator
 
     author.style.color = "red"
     let title = document.createElement("h3")
@@ -1212,11 +1214,11 @@ let WORLD_NEWS_1 = (data) => {
     description.innerHTML = data[i].description
 
     let publishedAt = document.createElement("p")
-    publishedAt.innerText = data[i].publishedAt
+    publishedAt.innerText = data[i].pubDate
 
 
 
-    div.append(urlToImage, author, title, description, publishedAt)
+    div.append(author, title, description, publishedAt)
     div.addEventListener("click", function (){
       localStorage.setItem("news", JSON.stringify(data[i]));
       window.location.href="detailedNews.html";
@@ -1232,11 +1234,11 @@ let WORLD_NEWS_2 = (data) => {
 
     let div = document.createElement("div")
 
-    let urlToImage = document.createElement("img")
-    urlToImage.src = data[i].urlToImage;
+/*     let urlToImage = document.createElement("img")
+    urlToImage.src = data[i].Image_url; */
 
     let author = document.createElement("p")
-    author.innerText = data[i].author
+    author.innerText = data[i].creator
 
     author.style.color = "red"
     let title = document.createElement("h3")
@@ -1246,11 +1248,11 @@ let WORLD_NEWS_2 = (data) => {
     description.innerHTML = data[i].description
 
     let publishedAt = document.createElement("p")
-    publishedAt.innerText = data[i].publishedAt
+    publishedAt.innerText = data[i].pubDate
 
 
 
-    div.append(urlToImage, author, title, description, publishedAt)
+    div.append(author, title, description, publishedAt)
     div.addEventListener("click", function (){
       localStorage.setItem("news", JSON.stringify(data[i]));
       window.location.href="detailedNews.html";
@@ -1267,17 +1269,17 @@ let WORLD_NEWS_3 = (data) => {
     let div = document.createElement("div")
 
     //  let urlToImage=document.createElement("img")
-    //  urlToImage.src=data[i].urlToImage;
+    //  urlToImage.src=data[i].Image_url;
 
     let author = document.createElement("p")
-    author.innerText = data[i].author
+    author.innerText = data[i].creator
 
     author.style.color = "red"
     let title = document.createElement("h3")
     title.innerHTML = data[i].title
 
     let image= document.createElement("img");
-    image.src=data[i].urlToImage;
+    image.src=data[i].Image_url;
     image.style.height="80px";
     image.style.width="fit-content";
 
@@ -1285,7 +1287,7 @@ let WORLD_NEWS_3 = (data) => {
     description.innerHTML = data[i].description
 
     let publishedAt = document.createElement("p")
-    publishedAt.innerText = data[i].publishedAt
+    publishedAt.innerText = data[i].pubDate
 
     let hr = document.createElement("hr")
 
@@ -1305,11 +1307,11 @@ let WORLD_NEWS_4 = (data) => {
 
     let div = document.createElement("div")
 
-    let urlToImage = document.createElement("img")
-    urlToImage.src = data[i].urlToImage;
+    /* let urlToImage = document.createElement("img")
+    urlToImage.src = data[i].Image_url; */
 
     let author = document.createElement("p")
-    author.innerText = data[i].author
+    author.innerText = data[i].creator
 
     author.style.color = "red"
     let title = document.createElement("h3")
@@ -1319,11 +1321,11 @@ let WORLD_NEWS_4 = (data) => {
     description.innerHTML = data[i].description
 
     let publishedAt = document.createElement("p")
-    publishedAt.innerText = data[i].publishedAt
+    publishedAt.innerText = data[i].pubDate
 
 
 
-    div.append(urlToImage, author, title, description, publishedAt)
+    div.append(author, title, description, publishedAt)
     div.addEventListener("click", function (){
       localStorage.setItem("news", JSON.stringify(data[i]));
       window.location.href="detailedNews.html";
@@ -1341,20 +1343,20 @@ let photos = (data) => {
 
     let div = document.createElement("div")
 
-    let urlToImage = document.createElement("img")
-    urlToImage.src = data[i].urlToImage;
+/*     let urlToImage = document.createElement("img")
+    urlToImage.src = data[i].Image_url;
     urlToImage.style.height="200px";
-    urlToImage.style.width="fit-content";
+    urlToImage.style.width="fit-content"; */
 
     let author = document.createElement("p")
-    author.innerText = data[i].author
+    author.innerText = data[i].creator
 
     author.style.color = "red"
     let title = document.createElement("h3")
     title.innerHTML = data[i].title
     title.style.fontSize="";
 
-    div.append(urlToImage, author, title)
+    div.append(author, title)
     div.addEventListener("click", function (){
       localStorage.setItem("news", JSON.stringify(data[i]));
       window.location.href="detailedNews.html";
@@ -1372,17 +1374,17 @@ let SPOTLIGHT_1 = (data) => {
     let div = document.createElement("div")
 
 
-    let urlToImage = document.createElement("img")
-    urlToImage.src = data[i].urlToImage;
+  /*   let urlToImage = document.createElement("img")
+    urlToImage.src = data[i].Image_url;
     urlToImage.style.height="200px";
-    urlToImage.style.width="fit-content";
+    urlToImage.style.width="fit-content"; */
 
     let publishedAt = document.createElement("p")
-    publishedAt.innerText = data[i].publishedAt
+    publishedAt.innerText = data[i].pubDate
 
 
     let author = document.createElement("p")
-    author.innerText = data[i].author
+    author.innerText = data[i].creator
     author.style.color = "red"
 
 
@@ -1394,7 +1396,7 @@ let SPOTLIGHT_1 = (data) => {
 
 
 
-    div.append(urlToImage, author, title, description, publishedAt)
+    div.append(author, title, description, publishedAt)
     div.addEventListener("click", function (){
       localStorage.setItem("news", JSON.stringify(data[i]));
       window.location.href="detailedNews.html";
@@ -1412,17 +1414,17 @@ let BUSINESSSPOTLIGHT = (data) => {
     let div = document.createElement("div")
 
 
-    let urlToImage = document.createElement("img")
-    urlToImage.src = data[i].urlToImage;
+   /*  let urlToImage = document.createElement("img")
+    urlToImage.src = data[i].Image_url;
     urlToImage.style.height="250px";
-    urlToImage.style.width="fit-content";
+    urlToImage.style.width="fit-content"; */
 
     let publishedAt = document.createElement("p")
-    publishedAt.innerText = data[i].publishedAt
+    publishedAt.innerText = data[i].pubDate
 
 
     let author = document.createElement("p")
-    author.innerText = data[i].author
+    author.innerText = data[i].creator
     author.style.color = "red"
 
 
@@ -1434,7 +1436,7 @@ let BUSINESSSPOTLIGHT = (data) => {
 
 
 
-    div.append(urlToImage, author, title, description, publishedAt)
+    div.append(author, title, description, publishedAt)
     div.addEventListener("click", function (){
       localStorage.setItem("news", JSON.stringify(data[i]));
       window.location.href="detailedNews.html";

@@ -1,14 +1,15 @@
-import navbar from "../comoponents/navbar.js";
-import header from "../comoponents/header.js";
-import footer from "../comoponents/footer.js";
-import bottom from "../comoponents/bottomdiv.js";
+import header from "../components/header.js";
+import navbar from "../components/navbar.js";
+import footer from "../components/footer.js";
+import bottomDiv from "../components/bottomdiv.js";
 
 document.getElementById('navbar').innerHTML = navbar();
 document.getElementById('logo_section').innerHTML = header();
 document.getElementById('container').innerHTML = footer();
-document.getElementById('bottom').innerHTML = bottom();
+document.getElementById("bottom").innerHTML = bottomDiv();
 
-let user_number = localStorage.getItem('number');
+
+let user_number = 123456789;
 
 let signUpFun = async (e) => {
     e.preventDefault();
@@ -17,7 +18,7 @@ let signUpFun = async (e) => {
     let Password = document.getElementById('passoword_sd').value;
     console.log(Password);
 
-    if (phone !== user_number || Password != 1234) {
+    if (phone != user_number || Password != 1234) {
         alert("Invalid Phone Number & Password");
     } else {
         alert("Welcome To Outlook India!")
@@ -51,4 +52,4 @@ for (let i = 0; i < arr.length; i++) {
     }
 }
 
-document.getElementById('date').append(cdate+"th"+ " " + month + " " + " " + cyear);
+document.getElementById('date').append(cday + " " + month + " " + cdate + " " + cyear);
