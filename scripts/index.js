@@ -1,11 +1,11 @@
 let getData = async (query) => {
   let todayDate = new Date().toISOString().split("T")[0];
 
-  //https://newsdata.io/api/1/news?apikey=pub_15613809a2723f4f851780b3997b38b0825e6&q=football&to_date=13-01-2023&language=en
+  //https://newsdata.io/api/1/news?apikey=pub_15610243fd574e27e03164cf7edb23aedf21b&q=football&to_date=13-01-2023&language=en
 
-  //let res = await fetch(`https://newsdata.io/api/1/news?apikey=pub_15613809a2723f4f851780b3997b38b0825e6&q=${query}&to_date=${todayDate}&language=en`);
+  
 
-  let res = await fetch(`https://newsdata.io/api/1/news?apikey=pub_15613809a2723f4f851780b3997b38b0825e6&q=${query}&to_date=${todayDate}&language=en`);
+  let res = await fetch(`https://newsdata.io/api/1/news?apikey=pub_15610243fd574e27e03164cf7edb23aedf21b&q=${query}&to_date=${todayDate}&language=en`);
 
   let data = await res.json();
 
@@ -184,7 +184,7 @@ let append_3 = (data) => {
 let getData2 = async (query) => {
   let todayDate = new Date().toISOString().split("T")[0];
 
-  let res = await fetch(`https://newsdata.io/api/1/news?apikey=pub_15613809a2723f4f851780b3997b38b0825e6&q=${query}&to_date=${todayDate}&language=en`);
+  let res = await fetch(`https://newsdata.io/api/1/news?apikey=pub_15610243fd574e27e03164cf7edb23aedf21b&q=${query}&to_date=${todayDate}&language=en`);
 
   let data = await res.json();
 
@@ -203,7 +203,7 @@ getData2("national");
 let getData3 = async (query) => {
   let todayDate = new Date().toISOString().split("T")[0];
 
-  let res = await fetch(`https://newsdata.io/api/1/news?apikey=pub_15613809a2723f4f851780b3997b38b0825e6&q=${query}&to_date=${todayDate}&language=en`);
+  let res = await fetch(`https://newsdata.io/api/1/news?apikey=pub_15610243fd574e27e03164cf7edb23aedf21b&q=${query}&to_date=${todayDate}&language=en`);
 
   let data = await res.json();
 
@@ -222,7 +222,7 @@ getData3("business");
 let getData4 = async (query) => {
   let todayDate = new Date().toISOString().split("T")[0];
 
-  let res = await fetch(`https://newsdata.io/api/1/news?apikey=pub_15613809a2723f4f851780b3997b38b0825e6&q=${query}&to_date=${todayDate}&language=en`);
+  let res = await fetch(`https://newsdata.io/api/1/news?apikey=pub_15610243fd574e27e03164cf7edb23aedf21b&q=${query}&to_date=${todayDate}&language=en`);
 
   let data = await res.json();
 
@@ -242,7 +242,7 @@ getData4("crypto currency");
 let getData5 = async (query) => {
   let todayDate = new Date().toISOString().split("T")[0];
 
-  let res = await fetch(`https://newsdata.io/api/1/news?apikey=pub_15613809a2723f4f851780b3997b38b0825e6&q=${query}&to_date=${todayDate}&language=en`);
+  let res = await fetch(`https://newsdata.io/api/1/news?apikey=pub_15610243fd574e27e03164cf7edb23aedf21b&q=${query}&to_date=${todayDate}&language=en`);
 
   let data = await res.json();
 
@@ -262,7 +262,7 @@ getData5("sports");
 let getData6 = async (query) => {
   let todayDate = new Date().toISOString().split("T")[0];
 
-  let res = await fetch(`https://newsdata.io/api/1/news?apikey=pub_15613809a2723f4f851780b3997b38b0825e6&q=${query}&to_date=${todayDate}&language=en`);
+  let res = await fetch(`https://newsdata.io/api/1/news?apikey=pub_15610243fd574e27e03164cf7edb23aedf21b&q=${query}&to_date=${todayDate}&language=en`);
 
   let data = await res.json();
 
@@ -281,7 +281,7 @@ getData6("entertainment");
 let getData7 = async (query) => {
   let todayDate = new Date().toISOString().split("T")[0];
 
-  let res = await fetch(`https://newsdata.io/api/1/news?apikey=pub_15613809a2723f4f851780b3997b38b0825e6&q=${query}&to_date=${todayDate}&language=en`);
+  let res = await fetch(`https://newsdata.io/api/1/news?apikey=pub_15610243fd574e27e03164cf7edb23aedf21b&q=${query}&to_date=${todayDate}&language=en`);
 
   let data = await res.json();
 
@@ -298,7 +298,7 @@ getData7("culture");
 let getData8 = async (query) => {
   let todayDate = new Date().toISOString().split("T")[0];
 
-  let res = await fetch(`https://newsdata.io/api/1/news?apikey=pub_15613809a2723f4f851780b3997b38b0825e6&q=${query}&to_date=${todayDate}&language=en`);
+  let res = await fetch(`https://newsdata.io/api/1/news?apikey=pub_15610243fd574e27e03164cf7edb23aedf21b&q=${query}&to_date=${todayDate}&language=en`);
 
   let data = await res.json();
 
@@ -318,7 +318,7 @@ getData8("magazine");
 let getData9 = async (query) => {
   let todayDate = new Date().toISOString().split("T")[0];
 
-  let res = await fetch(`https://newsdata.io/api/1/news?apikey=pub_15613809a2723f4f851780b3997b38b0825e6&q=${query}&to_date=${todayDate}&language=en`);
+  let res = await fetch(`https://newsdata.io/api/1/news?apikey=pub_15610243fd574e27e03164cf7edb23aedf21b&q=${query}&to_date=${todayDate}&language=en`);
 
   let data = await res.json();
 
@@ -338,7 +338,7 @@ getData9("world news");
 let getData10 = async (query) => {
   let todayDate = new Date().toISOString().split("T")[0];
 
-  let res = await fetch(`https://newsdata.io/api/1/news?apikey=pub_15613809a2723f4f851780b3997b38b0825e6&q=${query}&to_date=${todayDate}&language=en`);
+  let res = await fetch(`https://newsdata.io/api/1/news?apikey=pub_15610243fd574e27e03164cf7edb23aedf21b&q=${query}&to_date=${todayDate}&language=en`);
 
   let data = await res.json();
 
@@ -355,7 +355,7 @@ getData10("most important news");
 let getData11 = async (query) => {
   let todayDate = new Date().toISOString().split("T")[0];
 
-  let res = await fetch(`https://newsdata.io/api/1/news?apikey=pub_15613809a2723f4f851780b3997b38b0825e6&q=${query}&to_date=${todayDate}&language=en`);
+  let res = await fetch(`https://newsdata.io/api/1/news?apikey=pub_15610243fd574e27e03164cf7edb23aedf21b&q=${query}&to_date=${todayDate}&language=en`);
 
   let data = await res.json();
 
@@ -372,7 +372,7 @@ getData11("spotlight");
 let getData12 = async (query) => {
   let todayDate = new Date().toISOString().split("T")[0];
 
-  let res = await fetch(`https://newsdata.io/api/1/news?apikey=pub_15613809a2723f4f851780b3997b38b0825e6&q=${query}&to_date=${todayDate}&language=en`);
+  let res = await fetch(`https://newsdata.io/api/1/news?apikey=pub_15610243fd574e27e03164cf7edb23aedf21b&q=${query}&to_date=${todayDate}&language=en`);
 
   let data = await res.json();
 
