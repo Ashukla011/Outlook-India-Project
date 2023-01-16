@@ -46,7 +46,7 @@ let search= async()=>{
 
     console.log(todayDate);
 
-    let res = await fetch(`https://newsapi.org/v2/everything?q=${query}&from=${todayDate}&sortBy=publishedAt&language=en&apiKey=06534a7328b048a0a25f6eea9a9844c6`);
+    let res = await fetch(`https://newsdata.io/api/1/news?apikey=pub_15613809a2723f4f851780b3997b38b0825e6&q=${query}&to_date=${todayDate}&language=en`);
     
     let data = await res.json();
     
