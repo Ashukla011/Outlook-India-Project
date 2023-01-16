@@ -5,12 +5,12 @@ let search_navbar= async(query)=>{
 
     console.log(todayDate);
 
-    let res = await fetch(`https://newsapi.org/v2/everything?q=${query}&from=${todayDate}&sortBy=publishedAt&language=en&apiKey=aca8e599ce734ecf88f6d175fb6e04a8`);
+    let res = await fetch(`https://newsdata.io/api/1/news?apikey=pub_15610243fd574e27e03164cf7edb23aedf21b&q=${query}&to_date=${todayDate}&language=en`);
     
     let data = await res.json();
     
-    localStorage.setItem("last_query",JSON.stringify(data.articles));
+    localStorage.setItem("last_query",JSON.stringify(data.results));
     window.location.href="search.html";
-    console.log(data);
+    console.log(data.results);
 
 }

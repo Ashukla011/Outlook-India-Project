@@ -24,8 +24,8 @@ let appendData = (news)=>{
     title.textContent=news.title;
     title.style.fontSize="50px";
 
-    let image=document.createElement("img");
-    image.src=news.urlToImage;
+    /* let image=document.createElement("img");
+    image.src=news.urlToImage; */
 
     let description=document.createElement("h2");
     description.textContent=news.description;
@@ -36,7 +36,7 @@ let appendData = (news)=>{
     let author=document.createElement("h4");
     author.textContent=news.author;
     
-    box.append(title,image,description,content,author);
+    box.append(title,/* image, */description,content,author);
     container.append(box);
 }
 

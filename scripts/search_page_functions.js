@@ -3,8 +3,10 @@ let container=document.querySelector("#container_searchPage");
 
 
 
-let appendData=(searched_news)=>{
+ let appendData=(searched_news)=>{
     container.innerHTML=null;
+
+    //console.log(searched_news);
 
     searched_news.map(function (ele){
         let box=document.createElement("div");
@@ -13,8 +15,8 @@ let appendData=(searched_news)=>{
         let blockA=document.createElement("div");
         blockA.setAttribute("id","search_Page_box_blockA");
 
-        let image=document.createElement("img");
-        image.src=ele.urlToImage;
+        /* let image=document.createElement("img");
+        image.src=ele.urlToImage; */
 
         let blockB=document.createElement("div");
         blockB.setAttribute("id","search_Page_box_blockB");
@@ -25,7 +27,7 @@ let appendData=(searched_news)=>{
         let description=document.createElement("p");
         description.textContent=ele.description;
 
-        blockA.append(image);
+        //blockA.append(image);
         blockB.append(title,description);
         box.append(blockA,blockB);
 
@@ -36,9 +38,9 @@ let appendData=(searched_news)=>{
 
         container.append(box);
     });
-}
+} 
 
-let search= async()=>{
+let search= async()=>{                                          //this will only get called when search button is pressed
     let query = document.querySelector("#search_input").value;
 
 
@@ -46,15 +48,18 @@ let search= async()=>{
 
     console.log(todayDate);
 
-    let res = await fetch(`https://newsdata.io/api/1/news?apikey=pub_15613809a2723f4f851780b3997b38b0825e6&q=${query}&to_date=${todayDate}&language=en`);
+    let res = await fetch(`https://newsdata.io/api/1/news?apikey=pub_15610243fd574e27e03164cf7edb23aedf21b&q=${query}&to_date=${todayDate}&language=en`);
     
     let data = await res.json();
+
+    //console.log(data.results);
     
-    localStorage.setItem("last_query",JSON.stringify(data.articles));
-    window.location.href="search.html";
-    appendData(data.articles);
+    localStorage.setItem("last_query",JSON.stringify(data.results));        //Saving data to local storage
+    //appendData(data.results);
+    window.location.href="search.html";                                     //Switching to search.html
+    
 }
 
-let last_searched_news = JSON.parse(localStorage.getItem("last_query"));
-appendData(last_searched_news);
-
+ let last_searched_news = JSON.parse(localStorage.getItem("last_query"));   //This will only get called when search.html get opened
+appendData(last_searched_news);                                             //saved data from local storage will get listed
+ 
